@@ -1,0 +1,25 @@
+<script>
+function checkPalindrome(str) {
+    var isPalindrome = true;
+    
+    for (let i = 0; i < str.length / 2; i++) {
+        if (str[i] !== str[str.length - 1 - i]) {
+            isPalindrome = false;
+            break;
+        }
+    }
+
+    return isPalindrome;
+}
+
+var a = "madam";
+var result = checkPalindrome(a);
+
+console.log(a);
+
+if (result) {
+    document.write("The string is a palindrome.");
+} else {
+    document.write("The string is not a palindrome.");
+}
+</script>
